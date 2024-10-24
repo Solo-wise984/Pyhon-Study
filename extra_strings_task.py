@@ -38,7 +38,7 @@ sentence2=sentence.count("s")
 print(sentence)
 
 #Checking Substring presence
-quote="The beszt way to predict the future is to create it"
+quote="The best way to predict the future is to create it"
 quote2=quote.count('future')
 print(quote2)
 #using "in" in this 

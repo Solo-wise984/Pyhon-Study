@@ -36,3 +36,13 @@ print(bikes[1])
 print(bikes[3])
 message="My best bike"
 print(message+bikes[3])
+
+
+trainees=["John",[2["James","Mary"]]]
+print(trainees[1][0])
+print(trainee[1][1][0])
+trainee.append(56)
+
+
+
+

@@ -2,10 +2,9 @@
 name="JOHn"
 print(name .capitalize)
 
-
+#cleaning the word "John Doe"
 fname="Joh.n"
 lname="Do,e"
-
 #Replacing ","with a space"
 cleaned_fname= fname .replace('.','')
 cleaned_lname=lname.replace(',','')
