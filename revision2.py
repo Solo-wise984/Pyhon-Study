@@ -16,3 +16,26 @@ print(text.strip())
 print(text.lstrip())
 print(text.rstrip())
 
+#lists
+cars=['subaru','toyota','mazda','vw']
+print(cars[1])
+print("Solomon favorite car is"+" "+ (cars[2]))
+print(cars[1].title())
+#modifying  list
+bikes=['ducati','kawasaki','yamaha']
+bikes[0]='zuzuki'
+print(bikes)
+#Adding an element use .append
+bikes.append('ducati')
+print(bikes)
+#inserting an element use .inserst and u must use the index
+bikes.insert(0,'honda')
+print(bikes)
+#deleting element on the list we use del
+solomon=['music','football','hockey']
+del solomon[1]
+print (solomon)
+
+
+
+
