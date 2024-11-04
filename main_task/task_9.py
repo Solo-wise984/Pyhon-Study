@@ -6,4 +6,30 @@
 #***
 #****
 #*****.....
-num=int(input('enter number'))
+number=5
+
+for i in range(number):
+    
+    
+    print('*' * (i+1))
+    
+    
+    
+    #To print the spaces before the stars
+    print(' ' * (number - i - 1), end='')
+    
+    #To print the stars
+print('*' * (i+1))
+
+print()
+print('*' * (i+1))
+    
+  
+
+    
+  
+    
+
+
+    
+    
