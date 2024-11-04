@@ -9,9 +9,8 @@ speed=int(input(accelator))
 count=0
 if speed==70:
     print("Ok")
-    if count+=1:
+    if count += 1 :
         print("Points: 1")
     elif count>12:
         print("License suspended")   
     
-e
