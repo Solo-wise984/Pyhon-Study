@@ -146,10 +146,14 @@ class BankAccount:
     def get_balance(self):
         return f"{self.own} your balance is {self.bal}"        
     
-BankAccount('Solomon Macharia')
-person1.deposit(5000000)
-person.withdraw(5000)
-print(perain_get_balance())
+#BankAccount('Solomon Macharia')
+#person1=deposit(5000000)
+#person.withdraw(5000)
+#print(perain_get_balance())
+
+banks=BankAccount('Solomon Macharia','1000000')
+
+
 
 
 
@@ -161,10 +165,11 @@ class Rectangle:
         self.w=width
         self.h=height
     def area(self):
-        return f"The area of the rectangle with  is :{self.w}*{self.h} is: "
+        return f"The area of the rectangle with  15 and 20 is {self.w}*{self.h} is: "
     def perimeter (self):
-        return f"The perimeter of the rectangle is : {self.w}+{self.h}+{self.w}+{self.h}"
-diamensions=Rectangle(15,20)
+        sum=self.w+self.w+self.h=self.h
+       
+        return f"The perimeter of the rectangle is {self.sum}: 
 print(diamensions.perimeter())
 print(diamensions.area())
 
@@ -173,13 +178,16 @@ print(diamensions.area())
 # Instantiate an employee, give them a raise, and display their new salary.
 class Employee:
     def __init__(self,name,salary):
-        self.nm=name
+        self.nm=name#atribute
         self.sal=salary
     def give_raise (self,percentage):
-        new_salary+=self.sal*(percentage/100)
-        return f"{self.nm} your  salary is {self.sal} and your new salary is {new_salary}" 
-print(new_salary.give_raise()) # type: ignore
+        self.sal+=self.sal*(percentage/100)
+        return f"Your new salary {self.sal}"
         
+employee1=Employee("Solomon Macharia",2000000) 
+    
+print(employee1.give_raise(20))
+
         
     
     
@@ -192,25 +200,89 @@ class Vehicle:
         self.model=model
     def describe(self):
         return f"This vehicle is a {self.brand} brand and {self.model} model"
-class Car :
+class Car(Vehicle):
+    
     def __init__(self,brand,model):
-         self.brand=brand
-         self.model=model
-    def describe_car(self):
+        super().__init__(brand,model)
+         
+    def hock(self):
         return f"The car is a {self.brand} and {self.model} honk honk !!"
-class Motorcycle:
+class Motorcycle (Vehicle):
     def __init__(self,brand,model):
-         self.brand=brand
-         self.model=model
-    def describe_motocycle(self):
+        super().__init__(brand,model)
+         
+    def rev_engine(self):
         return f"The motocycle is a {self.brand} and {self.model} and it has a rev_engine !!"
-vehicle=Vehicle(BMW,Xseries)# type: ignore
-print
+
+car=Car('BMW','Xseries')
+motorcycle=Motorcycle("ducati","772")
+print(car.hock())
+print(motorcycle.rev_engine())
 
     
+
+#Write a program that takes input of someone's basic salary and benefits, adds them to fin
+#d the gross salary then uses  the gross salary to find the NHIF
+
+class Salary :
+    def __init__(self,basic_salary,benefits):
+        self.bs=basic_salary
+        self.bn=benefits
+    def gross_salary(self):
+        return f"Your  gross salary is {self.bs} + {self.bn}: "
+salary=Salary(100000,5000)
+print(salary.gross_salary())
+        
+
+#TASK 16: Using Python or PHP or Java or Ruby or JavaScript
+#Continue with the program above, then use  the gross salary to find the NSSF. 
+#To find the Kenya NSSF Rate  using 6% of the Gross Salary. BUT ONLY A MINIMUM OF 18,000 Gross Salary CAN BE USED IN NSSF. 
+class NSSF :
+    def __init__(self,gross_salary):
+        self.gross=gross_salary
+    def NSSf_rate(self):
+        rate=self.gross*(6/100)
+        return f"The NSSF rate is {rate}* "
+print(rate.NSSF_rate())
     
+
+#Write a normal program but use functions if you feel comfortable.
+
+#Task 17: Using Python or PHP or Java or Ruby or JavaScript
+#Continue with the same program and calculate an individual’s NHDF using:
+#i.e NHDF = gross_salary *  0.015
+class NHDF:
+    def __init__ (self,gross_salary):
+     self.gross=gross_salary
+    def NHDF(self):
+        result=self.gross*0.015
+        return f"The NHDF is {result}"
+print(result.NHDF())
+
+#Write a normal program but use functions if you feel comfortable.
+
+#Task 18: Using Python or PHP or Java or Ruby or JavaScript
+#Calculate the taxable income.
+#i.e taxable_income = gross salary - (NSSF + NHDF + NHIF) 
+class Taxable_income:
+    def __init__ (self,gross_salary,NHDF,NSSF):
+        self.gross=gross_salary
+        self.NH=NHDF
+        self.NS=NSSF
+    def taxable_income(self):
+        total
     
-    
+
+#Write a normal program but use functions if you feel comfortable.
+
+#TASK 19: Using Python or PHP or Java or Ruby or JavaScript
+#Continue with the same program and find the person's PAYEE using the taxable income above.
+#Find the Kenya PAYEE Tax Rate using THIS LINK
+#write a normal program but use functions if you feel comfortable.
+
+#Task 20: Using Python or PHP or Java or Ruby or JavaScript
+#Continue with the same program and calculate an individual’s Net Salary using:
+#net_salary = gross_salary - (nhif + nhdf +  nssf + payee)
 
     
     
