@@ -1,4 +1,4 @@
-measage=("Solomon")
+message=("Solomon")
 print (message)
 
 # File operations

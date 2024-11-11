@@ -7,7 +7,7 @@ def average_marks(maths, eng, swa, sci, sos):
     average = ((maths + eng + swa + sci + sos) / 5)
     return average
 
-def grade(average = ((maths + eng + swa + sci + sos) / 5)):
+def grade(average = ((maths + eng + swa + sci + sos) / 5)): # type: ignore
     grade = average
     if grade > 79:
         print("Grade: A")

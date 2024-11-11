@@ -8,7 +8,7 @@ print(my_ds[3][1])
 #in dictionary with the key currency ,add another key " amount" with value 90
 my_ds[3][2]["amount"] = 90
 #reversing 987 to 789
-my_ds[4=str(my_ds[4])]
+my_ds[4]=str(my_ds[4])
 my_ds[4]=(my_ds[4][::-1])
 my_ds[4]=int(my_ds[4])
 print(my_ds)

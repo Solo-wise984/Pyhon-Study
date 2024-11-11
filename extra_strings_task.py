@@ -26,11 +26,13 @@ print(greetings2)
 msg="Python Programming"
 msg2=msg.upper()
 print(msg2) 
+print(msg.upper())
 
 #changing to lowercase
 msg="Python Programming"
 msg3=msg.lower() 
 print(msg3)
+print(msg.lower())
 
 ##Count occurrence
 sentence="This is a simple sentence"
