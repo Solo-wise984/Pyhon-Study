@@ -15,12 +15,24 @@ def rectangle_area():
 rectangle_area()
 
 #area of a triangle using parameters and arguments
+class Triangle:
+    def __init__ (self,length,width):
+        self.l=length
+        self.w=width
+    def area(self):
+        result=self.l*self.w
+        return f"The area of the triangle {result} is"
+triangle=Triangle(22,13)
+print(triangle.area())
+
 def area_traingle(a,b):
     area=((a*b)*0.5)
     return area
 area_traingle(20,50)
 x=area_traingle(10,5)
 print(x)
+
+
 
 #write a function that going to check if aa number is even or odd number
 

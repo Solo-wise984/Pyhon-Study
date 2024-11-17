@@ -16,7 +16,7 @@ y=list(range(1,51))
 print(y)
 
 
-y=list(range(1,50,7))
+y=list(range(1,50,))
 
 print(y)    
 x=[]

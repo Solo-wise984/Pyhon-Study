@@ -17,7 +17,9 @@ else:
     
     
 password=int(input("Enter password"))
-Correct_password
+Correct_password='secret123'
+count=0
+count+=3
 if password=='secret123':
     print("Access granted")
 else:

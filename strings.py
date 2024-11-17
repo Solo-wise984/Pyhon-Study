@@ -32,6 +32,7 @@ sentence="SoLOMON came HOME TOday"
 sentence1=sentence.capitalize()
 
 print(sentence1)
+print(sentence.capitalize())
 
 sentence="SoLOMON came HOME TOday"
 sentence2=sentence.upper()

@@ -49,15 +49,15 @@ else:
 #"x and y are both even" if both x and y are even numbers.
 #"Only y is even" if only y is even.
 #"Neither x nor y are even" if both are odd.
-num_x=int(input("Enter a number:"))
-num_y=int(input("Enter a number:"))
-if num_x%2==0 and num_y%2==0:
-    print("They are even")
-elif num_x%2==0:
-    print("num_x is even")
-elif num_y%2==0:
-    print("num_y is even")    
+x=7
+y=14
+if x%2==0 and y%2==0:
+    print("Both x and y are even")
+elif x%2!=0 and y%2==0:
+    print("Y is even")
+elif x%2==0 and y%2!=0:
+    print("X ie even")
 else:
-    print("There are both odd")
-
+    print("Both are odd")
+    
 
