@@ -181,8 +181,8 @@ class Employee:
         self.nm=name#atribute
         self.sal=salary
     def give_raise (self,percentage):
-        self.sal+=self.sal*(percentage/100)
-        #return f"Your new salary {self.sal}"
+        self.sal+=self.sal*(percentage/100):
+          return f "Your new salary {self.sal}"
         
 employee1=Employee("Solomon Macharia",2000000) 
     

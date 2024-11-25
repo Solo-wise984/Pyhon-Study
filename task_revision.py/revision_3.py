@@ -83,7 +83,7 @@ class Temp:
             return "Cold temperatures!"
 user_temp=float(input('Enter the temperatures of today: '))
 Temperatures=user_temp
-print(Temperatures.display())
+#print(Temperatures.display())
     
 #Write a Python program that checks if a variable x is between 10 and 20 (inclusive)
 x=int(input('Enter a number: '))
@@ -104,11 +104,20 @@ class Number:
             return 'This number is not between 10 and 20'
 user_num=int(input('Enter a number: '))
 numw=user_num
-print(numw.display())
+#print(numw.display())
         
         
 #nd if another variable y is greater than 100. If both conditions are true, print "Conditions met", otherwise print "Conditions not met"
 # Write a Python program that checks if a variable password is equal to the string "secret123". If it is, print "Access   granted", otherwise print "Access denied"
+
+correct_passward="secret123"
+password=int(input("Enter password"))
+if password==correct_passward:
+    print("Access granted")
+else:
+    print("Access denied")
+
+        
  #Write a Python program that checks if a variable student_score is greater than 90. If true, check if the attendance is greater than 80. If both conditions are true, print "Excellent student", otherwise print "Good score, but attendance needs improvement"
  
  
@@ -118,6 +127,25 @@ print(numw.display())
 #Use the value from total to get the average and average to find the grade.
 
 #A > 79 , B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40
+
+
+##loops
+#Write a program that displays a numbers 1 to 50 inside a list.
+numbers=list(range(1,51))
+print(numbers)
+#From 1 above display the ones divisible by 7 or 5 inside a list.
+X=[]
+for i in numbers:
+    if i %5==0 or i %7==0:
+        x.append(i)
+        print(x)
+#Find sum and average of values in the range between 10 to 40.
+#Put in a list the first 10 odd numbers between 10 to 50. 
+#write a program that takes a number as input and prints its multiplication table up to 10 using a for loop.
+#write a program that counts and prints the number of even numbers between 1 and 50 using a for loop
+#ls1 = [ (“Jay”, 20), (“Mo”, 30), (“Mya”, 32) ]
+#Display the total quantity of the 3 above.
+
 
 
  
