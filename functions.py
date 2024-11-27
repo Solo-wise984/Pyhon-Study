@@ -102,5 +102,43 @@ def make_shirt():
 print(make_shirt())
 
 
-
+class Animal:
+    def __init__ (self, animal,sound):
+        self.animal=animal
+        self.sound=sound
+    def describe(self):
+        return f'{self.animal} makes this {self.sound} sound'
+animal=Animal('Cow','Moos')
+print(animal.describe())
+        
     
+class Shapes:
+    def area (self):
+        return 0
+#rectangle
+class Rectangle:
+    def __init__ (self,width,length):
+        self.w=width
+        self.l=length
+    def calculation(self):
+        result=self.w*self.l
+        return "The area of the rectangle is :{result}"
+#circle
+class Circle:
+    def __init__ (self,formula,radius):
+        self.f=formula
+        self.r=radius
+    def calculation(self):
+        result={self.f}*{self.r}*{self.r}
+        return 'The area of the circle is: {result}'
+#value of the rectangle
+def get_value():
+    width=int(input('Enter the width value: '))
+    length=int(input('Enter the value of length: '))
+    return Rectangle(width,length)
+#value of the circle
+def get_value():
+    formula=float(input("Enter the formula to be used: "))
+    radius=int(input('Enter the value of the radius: '))
+    return Circle(formula,radius)
+
