@@ -49,7 +49,7 @@ print(value)
 # Assume that the user would not enter any two numbers which are the same.
 user_input1=int(input("Enter first number: "))
 user_input2=int(input("Enter second number: "))
-user_input3=int(input("Enter third number: 23" ))
+user_input3=int(input("Enter third number: " ))
 user_input4=int(input("Enter fourth number: "))
 
 
@@ -83,6 +83,24 @@ def check_largest(user_input1, user_input2, user_input3, user_input4 ):
         
     largest = max(user_input1, user_input2, user_input3, user_input4)
 
-    
+def display_message()   :
+    message='you are learning a  new chapter'
+    return message
+display_message()
+
+
+def favourite_book():
+    title='Alice in Wonderland'
+    text="One of my favorites books is "
+    return f"{text} {title}"
+print(favourite_book())
+
+def make_shirt():
+    size=int(input('Enter the size of the T-shirt'))
+    text='Your T-shirt size is :'
+    return f'{text} {size}'
+print(make_shirt())
+
+
 
     
